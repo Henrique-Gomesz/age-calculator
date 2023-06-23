@@ -1,5 +1,4 @@
 import {
-  InputWrapper,
   Input as BaseInput,
   InputLabel,
   InputLabelWrapper,
