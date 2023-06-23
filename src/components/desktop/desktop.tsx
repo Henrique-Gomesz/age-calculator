@@ -62,10 +62,6 @@ export const DesktopComponent = () => {
       year.length < 3
     )
       return setHasError(true);
-    console.log(
-      Number(day) > actualDate.getDate() ||
-        Number(month) > actualDate.getMonth() + 1
-    );
 
     if (
       Number(year) === actualDate.getFullYear() &&
@@ -73,7 +69,16 @@ export const DesktopComponent = () => {
         Number(month) > actualDate.getMonth() + 1)
     )
       return setHasError(true);
+
     const dateIn = new Date(Number(year), Number(month) - 1, Number(day));
+
+    const daysDifference = differenceInDays(actualDate, dateIn);
+    const monthDifference = differenceInDays(actualDate, dateIn);
+    const yearsDifference = differenceInDays(actualDate, dateIn);
+
+    if (daysDifference < 0 || monthDifference < 0 || yearsDifference < 0)
+      return setHasError(true);
+      
     setResult({
       days: differenceInDays(actualDate, dateIn).toString(),
       months: differenceInMonths(actualDate, dateIn).toString(),

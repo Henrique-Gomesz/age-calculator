@@ -17,7 +17,12 @@ export const MainWrapper = styled.div`
     border-radius: 16px 16px 100px 16px;
   }
   @media (max-width: 450px) {
+    min-width: 300px;
+    width: 80vw;
+  }
+  @media (max-width: 350px) {
     min-width: 200px;
+    width: 70vw;
   }
 `;
 

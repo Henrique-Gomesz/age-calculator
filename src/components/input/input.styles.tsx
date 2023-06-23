@@ -9,6 +9,13 @@ export const MainWrapper = styled.div`
   max-width: 135px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 450px) {
+    width: 20vw;
+  }
+
+  @media (max-width: 450px) {
+    width: 20vw;
+  }
 
 `;
 
