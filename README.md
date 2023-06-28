@@ -1,5 +1,5 @@
 # age-calculator
-A challenge for Frontend mentor - Age calculator build with typescript and reactjs and deployed in vercel
+A challenge for Frontend mentor - Age calculator build with typescript and reactjs deployed in netlify
 
 [DEPLOYED APPLICATION](https://age-calculator-hg.netlify.app/)
 
